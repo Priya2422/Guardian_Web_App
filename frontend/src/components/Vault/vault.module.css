@@ -1,0 +1,156 @@
+.container {
+  max-width: 1200px;
+  margin: 1rem auto;
+
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modalBtn {
+  background: #171821;
+  font-size: larger;
+  color: #91a0b5;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.topHeadRow p,
+.list p {
+  text-align: center;
+  width: 15rem;
+}
+
+.topRowContainer {
+  display: flex;
+  align-items: center;
+  background: #171821;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  color: #91a0b5;
+  border-bottom: 2px solid #91a0b5;
+}
+
+.threeDot {
+  color: #91a0b5;
+  padding: 0.3rem;
+  font-weight: bold;
+  font-size: larger;
+  margin-right: 0.5rem;
+}
+
+.topHeadRow {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #171821;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.wholeList {
+  display: flex;
+  background: #171821;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #171821;
+  color: #91a0b5;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.bottomTable {
+  height: 0.5rem;
+  background: #171821;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.modal {
+  width: 50rem;
+  height: 30rem;
+  background: #1e222a;
+  color: #9f8457;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.form label {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.form .inputElement {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form input {
+  background: #1e222a;
+  color: #9f8457;
+  border: 2px solid #9f8457;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  outline: none;
+  padding: 0.8rem;
+  width: 95%;
+}
+
+.form input:focus {
+  border: 3px solid #61afef;
+}
+
+.form button {
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  background: #9f8457;
+  color: #1e222a;
+}
+
+.form span {
+  color: #fca5a5;
+}
+
+.inputPass {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.boton {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.passContainer {
+  display: flex;
+  align-items: center;
+}

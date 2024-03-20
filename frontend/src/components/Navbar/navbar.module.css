@@ -1,0 +1,48 @@
+nav {
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+}
+.addshadow{
+  box-shadow: 0 0 10px #21083b;
+}
+.login{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.btn {
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.btn:hover{
+  color: #bd80fe;
+}
+
+
+@media (max-width: 450px) {
+  .btn {
+    font-size: 1rem;
+  }
+  nav {
+    height: 4.5rem;
+  }
+}

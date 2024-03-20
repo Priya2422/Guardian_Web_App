@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+}
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 50%;
+}
+
+.left .pass {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  background: linear-gradient(to right, #6B5B7E 0%, #FEFEFF 36%, #FFFFFF 33%, #A48CBF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.left .trusted{
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  background: linear-gradient(to right, #6B5B7E 0%, #FEFEFF 36%, #FFFFFF 33%, #A48CBF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.shadow{
+  text-transform: uppercase;
+  padding: 1rem;
+  color: white;
+  border-radius: 3rem;
+  background: linear-gradient(90deg, rgba(116,4,159,1) 0%, rgba(185,125,238,1) 34%, rgba(222,194,246,1) 50%, rgba(185,125,238,1) 68%, rgba(116,4,159,1) 100%);
+}
+.left p {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  text-align: center;
+  background: linear-gradient(to right, #6B5B7E 0%, #FEFEFF 36%, #FFFFFF 33%, #A48CBF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #171821;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  background: #f3f6f9;
+  color: #171821;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .left h1 {
+    font-size: 2.5rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+  }
+
+  .btnGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .left h1 {
+    letter-spacing: 0;
+    font-size: 2rem;
+  }
+}

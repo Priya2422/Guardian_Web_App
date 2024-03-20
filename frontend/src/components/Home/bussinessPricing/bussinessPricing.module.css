@@ -1,0 +1,52 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+  color: white;
+  border-radius: 1.5rem;
+  flex-direction: column;
+}
+
+.section p {
+  font-size: 1.6rem;
+}
+
+.section button {
+  height: 4rem;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+  color: #171821;
+  transition: all 0.3s ease;
+}
+
+.section button:hover {
+  background: #171821;
+  color: white;
+  border: 2px solid white;
+}
+
+@media (max-width: 1199px) {
+  .section {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .section p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .section button {
+    height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+}

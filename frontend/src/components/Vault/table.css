@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+table {
+  font-family: 'DM Sans', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th,
+tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #171821;
+  color: white;
+}
+.actionBtn {
+  height: 2.5rem;
+  background: #171821;
+  font-size: 1rem;
+  color: #91a0b5;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.actionBtn:disabled {
+  background: #4f5267f5;
+  cursor: not-allowed;
+}
+.actions {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+@media screen and (max-width: 760px) {
+  table {
+    margin: 0 1rem;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 608px) {
+  td {
+    display: block;
+  }
+  th {
+    display: none;
+  }
+  td::before {
+    font-size: larger;
+    font-weight: 700;
+    content: attr(data-cell) ':  ';
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+  background: rgb(248, 234, 248);
+  border-top: 1px solid #eaccf4;
+}
+
+.section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem 0.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.linkGroup {
+  text-align: center;
+}
+
+.section a {
+  text-decoration: none;
+  color: black;
+}

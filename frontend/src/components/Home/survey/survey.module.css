@@ -1,0 +1,56 @@
+.section {
+  width: 97%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: 0.2rem solid #e39aff;
+  border-radius: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  border-style: groove;
+  box-shadow: 0 0 0rem #fff, 0 0 0rem #fff, 0px -1px 0rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2rem 0px #bc13fe, inset 0 0 1rem #c52fff;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+.section p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.section button {
+  height: 4rem;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, rgba(116,4,159,1) 0%, rgba(185,125,238,1) 34%, rgba(222,194,246,1) 50%, rgba(185,125,238,1) 68%, rgba(116,4,159,1) 100%);
+}
+
+
+@media (max-width: 1199px) {
+  .section {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .section p {
+    text-align: center;
+  }
+  .section button {
+    height: 3rem;
+    padding: 0 0.5rem;
+  }
+}

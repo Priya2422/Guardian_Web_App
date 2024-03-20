@@ -1,0 +1,92 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #6B5B7E 0%, #FEFEFF 36%, #FFFFFF 33%, #A48CBF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+.feature {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem 5rem 3rem;
+  background-image: linear-gradient(
+  50deg,
+  hsl(215deg 94% 21%) 0%,
+  hsl(214deg 86% 24%) 9%,
+  hsl(213deg 78% 27%) 18%,
+  hsl(212deg 72% 31%) 27%,
+  hsl(212deg 71% 33%) 36%,
+  hsl(219deg 68% 34%) 45%,
+  hsl(233deg 53% 37%) 54%,
+  hsl(255deg 58% 34%) 64%,
+  hsl(262deg 66% 29%) 73%,
+  hsl(262deg 69% 24%) 82%,
+  hsl(262deg 72% 18%) 91%,
+  hsl(262deg 80% 14%) 100%
+);
+}
+.design{
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+}
+.card {
+  padding: 1.5rem;
+  text-align: center;
+  width: 25%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  background-color: black;
+}
+
+.card h2 {
+  width: 80%;
+}
+
+.card img {
+  width: 6rem;
+}
+
+@media (max-width: 900px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .section h1 {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 0.5rem;
+  }
+  .card h2 {
+    font-size: 1.5rem;
+  }
+}
